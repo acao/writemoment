@@ -1,0 +1,16 @@
+<button class="btn btn-large btn-primary" {{action 'createText'}} > New Text </button>
+<div class="row">
+{{#each}}
+  <div class="col-md-3">
+    <div class="panel">
+      <div class="panel-heading">
+        <h2 class="panel-title">{{title}}</h2>
+      </div>
+      <div class="panel-body">
+        {{html-format text}}
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>
+
