@@ -1,1 +1,9 @@
-{{title}}
+<article>
+<h2 class="page-header">{{title}}</h2>
+<p>{{html-format text}}</p>
+</article>
+<footer>
+{{#each collection}}
+  {{collection.label}}
+{{/each}}
+</footer>

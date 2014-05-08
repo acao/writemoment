@@ -5,13 +5,14 @@ export default Ember.Route.extend({
   actions : {
     createText: function() {
       var route = this,
-          text = this.store.createRecord( 'text' );
+          text = this.store.createRecord('text' );
         console.log(text);
-        text.set('title', 'title');
-        text.set('text', 'text');
-        text.save().then( function( text ) {
-          route.transitionTo( 'text', text );
-      });
+        text.set('title', 'This is a title')
+            .set('text', 'A whole buncha text aint it')
+            .save()
+            .then( function( text ) {
+
+            });
     }
   }
 });

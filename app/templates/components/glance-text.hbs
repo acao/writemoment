@@ -1,1 +1,8 @@
-{{yield}}
+<div class="panel">
+  <div class="panel-heading">
+      {{#link-to 'texts.edit' id}}<h2 class="panel-title">{{title}}</h2>{{/link-to}}
+  </div>
+  <div class="panel-body">
+        {{html-format text}}
+  </div>
+</div>

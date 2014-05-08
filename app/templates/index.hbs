@@ -2,14 +2,9 @@
 <div class="row">
 {{#each}}
   <div class="col-md-3">
-    <div class="panel">
-      <div class="panel-heading">
-        <h2 class="panel-title">{{title}}</h2>
-      </div>
-      <div class="panel-body">
-        {{html-format text}}
-      </div>
-    </div>
+{{#link-to 'texts.edit' id}}edit{{/link-to}}
+    {{glance-text text=text id=id title=title}}
+
   </div>
 {{/each}}
 </div>
